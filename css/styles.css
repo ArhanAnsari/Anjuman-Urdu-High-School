@@ -1,61 +1,75 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #f4f4f9;
 }
 
 header {
-    background-color: #004d99;
+    background-color: #0056b3;
     color: #fff;
     padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .logo img {
-    width: 100px;
+    width: 120px;
     height: auto;
+    border-radius: 10px;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #003d7a;
+    border-radius: 5px;
 }
 
 main {
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 footer {
-    background-color: #004d99;
+    background-color: #0056b3;
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
 
 h2 {
-    color: #004d99;
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
 }
 
 h3 {
-    color: #0056b3;
+    color: #0064d2;
+    margin-top: 20px;
 }
 
 ul {
@@ -76,29 +90,42 @@ form label {
 
 form input, form textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 form button {
-    background-color: #004d99;
+    background-color: #0056b3;
     color: #fff;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
     background-color: #003d7a;
 }
 
-.gallery-item img {
-    max-width: 100%;
-    height: auto;
+.school-images {
+    display: flex;
+    gap: 10px;
 }
 
-.blog article {
+.school-images img {
+    width: 32%;
+    border-radius: 10px;
+}
+
+.blog article, .news article {
     margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Lightbox styles */
@@ -134,11 +161,19 @@ form button:hover {
     border: none;
     padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Mobile menu styles */
 .menu-toggle {
     display: none;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
 }
 
 nav ul {
@@ -152,7 +187,6 @@ nav ul.active {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
-        cursor: pointer;
     }
 
     nav ul {
@@ -162,5 +196,14 @@ nav ul.active {
 
     nav ul.active {
         display: flex;
+        background-color: #0056b3;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
     }
 }
