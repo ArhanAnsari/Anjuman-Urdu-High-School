@@ -207,3 +207,11 @@ nav ul.active {
         padding: 10px;
     }
 }
+
+h2::selection {
+    background-color: skyblue;
+}
+
+h3::selection {
+    background-color: skyblue;
+}
