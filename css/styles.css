@@ -215,3 +215,7 @@ h2::selection {
 h3::selection {
     background-color: skyblue;
 }
+
+p::selection {
+    background-color: yellowgreen;
+}
