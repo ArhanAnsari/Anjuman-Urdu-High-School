@@ -15,6 +15,7 @@
 	    <ul>
 		<li><a href="index.html">Home</a></li>
 		<li><a href="about.html">About Us</a></li>
+		    <li><a href="ECO-Club.html">ECO Club</a></li>
 		<li><a href="admissions.html">Admissions</a></li>
 		<li><a href="academics.html">Academics</a></li>
 		<li><a href="student-life.html">Student Life</a></li>
@@ -31,7 +32,7 @@
 		<h2>Done Events</h2>
 		<div class="event">
 		<div class="gallery-item">
-			<img src="images/events/10.jpg" alt="Event Photo 10">
+			<img src="images/events/10.jpg" alt="Event Photo 10" onclick="openModal(this.src)">
 		    </div>
 			<h3>Republic Day</h3>
 			<p>Date: January 26, 2024</p>
@@ -39,7 +40,7 @@
 		</div>
 		<div class="event">
 			<div class="gallery-item">
-				<img src="images/events/4.jpg" alt="Event Photo 4">
+				<img src="images/events/4.jpg" alt="Event Photo 4" onclick="openModal(this.src)">
 			    </div>
 			<h3>Teachers Day</h3>
 			<p>Date: September 5, 2023</p>
@@ -47,10 +48,10 @@
 		</div>
 		<div class="event">
 			<div class="gallery-item">
-				<img src="images/events/7.jpg" alt="Event Photo 7">
+				<img src="images/events/7.jpg" alt="Event Photo 7" onclick="openModal(this.src)">
 			    </div>
 			<div class="gallery-item">
-				<img src="images/events/5.jpg" alt="Event Photo 5">
+				<img src="images/events/5.jpg" alt="Event Photo 5" onclick="openModal(this.src)">
 			    </div>
 			<h3>Moblie Distribution Ceremony</h3>
 			<p>Date: January 01, 2023</p>
@@ -58,10 +59,10 @@
 		</div>
 		<div class="event">
 			<div class="gallery-item">
-				<img src="images/events/WhatsApp Image 2024-07-17 at 17.24.37_e8beb37b.jpg">
+				<img src="images/events/WhatsApp Image 2024-07-17 at 17.24.37_e8beb37b.jpg" onclick="openModal(this.src)">
 			</div>
 			<div class="gallery-item">
-				<img src="images/events/WhatsApp Image 2024-07-17 at 17.24.59_621c0918.jpg">
+				<img src="images/events/WhatsApp Image 2024-07-17 at 17.24.59_621c0918.jpg" onclick="openModal(this.src)">
 			</div>
 			<h3>ECO Club</h3>
 			<p>Date: July 01, 2024 - July 07, 2024</p>
@@ -69,26 +70,26 @@
 		</div>
 		<div class="event">
 			<div class="gallery-item">
-				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0028.jpg" alt="Event Photo 41">
+				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0028.jpg" alt="Event Photo 41" onclick="openModal(this.src)">
 			    </div>
 			<div class="gallery-item">
-				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0029.jpg" alt="Event Photo 42">
+				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0029.jpg" alt="Event Photo 42" onclick="openModal(this.src)">
 			    </div>
 			<div class="gallery-item">
-				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0030.jpg" alt="Event Photo 43">
+				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0030.jpg" alt="Event Photo 43" onclick="openModal(this.src)">
 			    </div>
 			<div class="gallery-item">
-				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0031.jpg" alt="Event Photo 44">
+				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0031.jpg" alt="Event Photo 44" onclick="openModal(this.src)">
 			    </div>
 			<div class="gallery-item">
-				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0032.jpg" alt="Event Photo 45">
+				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0032.jpg" alt="Event Photo 45" onclick="openModal(this.src)">
 			    </div>
 		
 			<div class="gallery-item">
-				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0034.jpg" alt="Event Photo 46">
+				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0034.jpg" alt="Event Photo 46" onclick="openModal(this.src)">
 			    </div>
 			<div class="gallery-item">
-				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0035.jpg" alt="Event Photo 47">
+				<img src="images/events/Assembly & Prayer/IMG-20240717-WA0035.jpg" alt="Event Photo 47" onclick="openModal(this.src)">
 			    </div>
 			<h3>Assembly & Prayer</h3>
 			<p>Date: Everyday</p>
@@ -117,6 +118,10 @@
     <footer>
 	<p>&copy; 2024 Anjuman Urdu High School and Jr. College, Shegaon. All rights reserved.</p>
     </footer>
+	<div id="modal" class="modal">
+		<span class="close" onclick="closeModal()">&times;</span>
+		<img class="modal-content" id="modal-image">
+	    </div>
     <script src="js/scripts.js"></script>
 </body>
 </html>

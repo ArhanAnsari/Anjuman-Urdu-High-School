@@ -79,3 +79,15 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
     }
 });
+
+function openModal(src) {
+    var modal = document.getElementById("modal");
+    var modalImage = document.getElementById("modal-image");
+    modal.style.display = "block";
+    modalImage.src = src;
+}
+
+function closeModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
