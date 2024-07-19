@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Anjuman Urdu High School and Jr. College</title>
-    <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -59,10 +59,27 @@
                 <p>We are excited to announce the opening of our new library. The library offers a wide range of books, digital resources, and comfortable reading spaces for students.</p>
             </article>
         </section>
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <div class="school-images">
+                <img src="images/events/1.jpg" alt="Event Photo 1" onclick="openModal(this.src)">
+                <img src="images/events/2.jpg" alt="Event Photo 2" onclick="openModal(this.src)">
+                <img src="images/events/3.jpg" alt="Event Photo 3" onclick="openModal(this.src)">
+                <img src="images/events/4.jpg" alt="Event Photo 4" onclick="openModal(this.src)">
+                <!-- Add more images as necessary -->
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Anjuman Urdu High School and Jr. College, Shegaon. All rights reserved.</p>
     </footer>
+
+    <!-- Modal for full-size image display -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
     <script src="js/scripts.js"></script>
 </body>
 </html>

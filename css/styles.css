@@ -8,12 +8,13 @@ body {
 }
 
 header {
-    background-color: #0056b3;
+    background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
@@ -24,7 +25,7 @@ header {
 
 .menu-toggle {
     display: none;
-    background-color: #0056b3;
+    background-color: #333;
     color: #fff;
     border: none;
     padding: 10px;
@@ -42,44 +43,44 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
-    padding: 5px 10px;
+    padding: 8px 12px;
     transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #003d7a;
+    background-color: #555;
     border-radius: 5px;
 }
 
 main {
-    padding: 20px;
+    padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    line-height: 1.6;
 }
 
 footer {
-    background-color: #0056b3;
+    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #0056b3;
-    border-bottom: 2px solid #0056b3;
-    padding-bottom: 5px;
+h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
 }
 
 h3 {
-    color: #0064d2;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 ul {
@@ -104,26 +105,27 @@ form input, form textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 form button {
-    background-color: #0056b3;
+    background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 form button:hover {
-    background-color: #003d7a;
+    background-color: #555;
 }
 
 .school-images {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -133,161 +135,24 @@ form button:hover {
     height: 200px; /* Fixed height for uniform size */
     object-fit: cover; /* Ensure images cover the entire space */
     border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.school-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .blog article, .news article {
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Lightbox styles */
-.lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-}
-
-.lightbox-content {
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
-}
-
-.lightbox img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.close-lightbox {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Mobile menu styles */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-    }
-
-    nav ul.active {
-        display: flex;
-        background-color: #0056b3;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        padding: 10px;
-    }
-}
-
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f8f8f8;
-}
-
-.logo img {
-    max-width: 100px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-} */
-
-.gallery {
-    padding: 20px;
-}
-
-.gallery h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.gallery-item {
-    display: inline-block;
-    margin: 5px;
-}
-
-.gallery-item img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    transition: transform 0.2s ease;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.05);
-}
-
-/* footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-} */
-
-
-@media (max-width: 480px) {
-    .logo img {
-        width: 80px;
-    }
-
-    .school-images img {
-        max-width: 100%;
-    }
-}
-
-/* Add this to the existing CSS file */
-
 .modal {
     display: none;
     position: fixed;
@@ -325,16 +190,82 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.active {
+        display: flex;
+        background-color: #333;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+}
+
+/* Add this to the existing CSS file */
+
+.gallery {
+    padding: 20px;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 5px;
+}
+
+.gallery-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .school-images img {
+        max-width: 100%;
+    }
+}
 
 /* Additional Styles */
 h2::selection {
-    background-color: skyblue;
+    background-color: #333;
+    color: #fff;
 }
 
 h3::selection {
-    background-color: skyblue;
+    background-color: #333;
+    color: #fff;
 }
 
 p::selection {
-    background-color: yellowgreen;
+    background-color: #555;
+    color: #fff;
 }
