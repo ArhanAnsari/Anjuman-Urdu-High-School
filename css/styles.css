@@ -51,7 +51,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 16px;
     padding: 8px 12px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
@@ -254,6 +254,15 @@ form button:hover {
     }
 }
 
+/*For PDF Preview*/
+.pdf {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Additional Styles */
 h2::selection {
     background-color: #333;
@@ -269,3 +278,4 @@ p::selection {
     background-color: #555;
     color: #fff;
 }
+
