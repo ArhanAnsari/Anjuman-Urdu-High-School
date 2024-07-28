@@ -256,9 +256,11 @@ form button:hover {
 
 /*For PDF Preview*/
 .pdf {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    height: 100%;
+    width: 100%; /* Fill parent container width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 800px; /* Set maximum width if needed */
+    max-height: 500px; /* Set maximum height if needed */
+    aspect-ratio: 4 / 3; /*  For maintaining aspect ratio */
     margin: 0;
     padding: 0;
 }
