@@ -125,6 +125,16 @@
 		<span class="close" onclick="closeModal()">&times;</span>
 		<img class="modal-content" id="modal-image">
 	    </div>
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	    const menuToggle = document.querySelector(".menu-toggle");
+	    const nav = document.querySelector("nav ul");
+
+	    menuToggle.addEventListener("click", function() {
+		nav.classList.toggle("active");
+	    });
+	});
+	</script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
