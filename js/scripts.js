@@ -91,3 +91,7 @@ function closeModal() {
     const modal = document.getElementById('modal');
     modal.style.display = "none";
 }
+
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('nav ul').classList.toggle('active');
+});

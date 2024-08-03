@@ -40,6 +40,7 @@ nav ul {
     padding: 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Ensure responsiveness */
 }
 
 nav ul li {
@@ -199,23 +200,28 @@ form button:hover {
     nav ul {
         display: none;
         flex-direction: column;
+        width: 100%;
     }
 
     nav ul.active {
         display: flex;
         background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
     }
 
     nav ul li {
         margin: 10px 0;
+        width: 100%;
+        text-align: center;
     }
 
     nav ul li a {
         padding: 10px;
+        display: block;
     }
 }
-
-/* Add this to the existing CSS file */
 
 .gallery {
     padding: 20px;
@@ -281,3 +287,9 @@ p::selection {
     color: #fff;
 }
 
+/* Additional styles to add space between rows of links */
+@media (max-width: 1200px) {
+    nav ul li {
+        margin-bottom: 10px; /* Add space between rows of links */
+    }
+}
